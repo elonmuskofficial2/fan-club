@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Membership Payment</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Elon Musk Fan Community</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fan-club.html">Membership</a></li>
+    </ul>
+</nav>
+
+
+<section class="payment-section">
+
+    <h1>Complete Your Membership Payment</h1>
+
+
+    <div class="payment-card">
+
+        <h2 id="selectedPlan"></h2>
+
+        <h3 id="selectedPrice"></h3>
+
+
+        <img
+            src="images/qr-code.png"
+            alt="BTC Payment QR Code"
+            class="payment-qr"
+        >
+
+
+        <p>
+            Scan QR code to make payment.
+        </p>
+
+
+        <hr>
+
+
+        <h3>Pay with Bitcoin</h3>
+
+        <p>
+            <strong>Network:</strong> BTC
+        </p>
+
+
+        <p>
+            <strong>Bitcoin Address:</strong>
+        </p>
+
+
+        <div class="wallet-address">
+            1B73Xc7ZouR9NQaymWZ4uiuuJZE1Ci4VL1
+        </div>
+
+
+        <button id="copyBtn" type="button" onclick="copyWallet()">
+    Copy Bitcoin Address
+</button>
+
+        <p class="warning">
+            ⚠ Send only BTC
+            Sending funds through another network may result in loss of funds.
+        </p>
+
+
+        <button
+            type="button"
+            id="paymentBtn"
+            onclick="confirmPayment()"
+        >
+            I've Sent Payment
+        </button>
+
+
+        
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

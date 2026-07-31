@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Membership</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <h2>Caitlin Clark Fan Community</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fan-club.html">Membership</a></li>
+    </ul>
+</nav>
+
+
+<section class="fan-form">
+
+    <h1>Join The Fan Community</h1>
+
+
+    <form>
+
+
+        <label>Full Name</label>
+        <input id="fanName" type="text" placeholder="Enter your name">
+
+
+        <label>Email Address</label>
+        <input id="fanEmail" type="email" placeholder="Enter your email">
+
+
+        <label>Phone Number</label>
+        <input 
+            id="phone" 
+            type="tel" 
+            placeholder="+1 555 123 4567"
+        >
+
+
+        <label>Country</label>
+
+        <input 
+            id="country"
+            list="countries"
+            placeholder="Search your country"
+        >
+
+
+        <datalist id="countries">
+
+            <option value="United States">
+            <option value="United Kingdom">
+            <option value="Canada">
+            <option value="Australia">
+            <option value="Germany">
+            <option value="France">
+            <option value="Nigeria">
+            <option value="Ghana">
+            <option value="South Africa">
+            <option value="Brazil">
+            <option value="India">
+            <option value="Japan">
+
+        </datalist>
+
+
+
+        <h2>Select Your Membership Plan</h2>
+
+
+        <div class="membership-plans">
+
+
+            <div
+                class="plan-card"
+                onclick="selectPlan('Bronze Membership', 350, this)"
+            >
+
+                <h3>🥉 Bronze Membership</h3>
+
+                <h2>$350</h2>
+
+                <p>✔ Community Access</p>
+                <p>✔ Fan Newsletter</p>
+                <p>✔ Membership Benefits</p>
+
+            </div>
+
+
+
+            <div
+                class="plan-card"
+                onclick="selectPlan('Silver Membership', 540, this)"
+            >
+
+                <h3>🥈 Silver Membership</h3>
+
+                <h2>$540</h2>
+
+                <p>✔ Everything in Bronze</p>
+                <p>✔ Exclusive Photos</p>
+                <p>✔ Early News Updates</p>
+
+            </div>
+
+
+
+            <div
+                class="plan-card vip"
+                onclick="selectPlan('Gold VIP Membership', 720, this)"
+            >
+
+                <h3>👑 Gold VIP Membership</h3>
+
+                <h2>$720</h2>
+
+                <p>✔ Everything in Silver</p>
+                <p>✔ VIP Content</p>
+                <p>✔ Priority Access</p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <input type="hidden" id="membership">
+
+        <input type="hidden" id="price">
+
+
+
+        <button type="button" onclick="continueToPayment()">
+            Continue to Payment
+        </button>
+
+
+    </form>
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+<div id="customAlert" class="custom-alert">
+
+    <div class="custom-alert-box">
+
+        <h3>⚠ Incomplete Form</h3>
+
+        <p>
+            Please complete all fields.
+        </p>
+
+        <button onclick="closeAlert()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+</body>
+
+</html>
