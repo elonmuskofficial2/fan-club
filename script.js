@@ -177,7 +177,7 @@ function(){
 
             selectPlan(
                 "Bronze Membership",
-                350,
+                2000,
                 cards[0]
             );
 
@@ -189,7 +189,7 @@ function(){
 
             selectPlan(
                 "Silver Membership",
-                540,
+                4000,
                 cards[1]
             );
 
@@ -201,7 +201,7 @@ function(){
 
             selectPlan(
                 "Gold VIP Membership",
-                720,
+                10000,
                 cards[2]
             );
 
